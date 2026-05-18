@@ -1,0 +1,26 @@
+NAME = ex01
+
+CPP = C++
+FLAGS = -Wall -Wextra -Werror -std=c++98
+
+SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp Wronganimal.cpp Wrongcat.cpp
+
+OBJS = $(SRCS:.cpp=.o)
+
+all:$(NAME)
+
+$(NAME): $(OBJS)
+	$(CPP) $(FLAGS) $(OBJS) -o $(NAME)
+
+%.o: %.cpp
+	$(CPP) $(FLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJS)
+
+fclean:
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
