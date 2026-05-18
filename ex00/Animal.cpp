@@ -2,7 +2,7 @@
 
 Animal::Animal(): _type("Animal")
 {
-    std::cout << " Animal default constructor called" << std::endl; 
+    std::cout << "Animal default constructor called" << std::endl; 
 }
 
 Animal::Animal(std::string name): _type(name)
@@ -31,7 +31,7 @@ Animal &Animal::operator=(const Animal& other)
 }
 
 
-void Animal::makeSound(void)
+void Animal::makeSound(void) const
 {
     std::cout << "Animal random sound" << std::endl;
 }

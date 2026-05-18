@@ -1,9 +1,9 @@
 NAME = Polymorphism
 
 CPP = c++
-FLAGS = -Wall -Wextra -Werror -std= c++98
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS= main.cpp 
+SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp Wronganimal.cpp Wrongcat.cpp 
 
 OBJS = $(SRCS:.cpp=.o)
 
