@@ -1,13 +1,13 @@
 NAME = ex01
 
-CPP = C++
+CPP = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp Wronganimal.cpp Wrongcat.cpp
+SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp Wronganimal.cpp Wrongcat.cpp 
 
 OBJS = $(SRCS:.cpp=.o)
 
-all:$(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CPP) $(FLAGS) $(OBJS) -o $(NAME)
@@ -15,7 +15,7 @@ $(NAME): $(OBJS)
 %.o: %.cpp
 	$(CPP) $(FLAGS) -c $< -o $@
 
-clean:
+clean: 
 	rm -f $(OBJS)
 
 fclean:
