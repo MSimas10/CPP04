@@ -7,7 +7,7 @@
 class Cat: public Animal
 {
     private:
-     Brain *brain
+        Brain *brain;
 
     public:
         Cat();
@@ -15,7 +15,8 @@ class Cat: public Animal
         Cat&operator=(const Cat& other);
         ~Cat();
 
-        void makeSound() const;
+        virtual void makeSound() const;
+        Brain *getBrain() const;
 
 };
 

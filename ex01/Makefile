@@ -3,7 +3,7 @@ NAME = ex01
 CPP = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp Wronganimal.cpp Wrongcat.cpp 
+SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp Wronganimal.cpp Wrongcat.cpp Brain.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -18,7 +18,7 @@ $(NAME): $(OBJS)
 clean: 
 	rm -f $(OBJS)
 
-fclean:
+fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
