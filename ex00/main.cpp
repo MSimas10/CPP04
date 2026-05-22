@@ -8,6 +8,7 @@ int main()
 {
 
 std::cout << "\n--- ANIMAL FARM TEST ---" << std::endl;
+std::cout << std::endl;
 const Animal* meta = new Animal();
 const Animal* j = new Dog();
 const Animal* i = new Cat();
@@ -21,8 +22,9 @@ delete meta;
 delete j;
 delete i;
 
-
+std::cout << std::endl;
 std::cout << "\n--- WRONG ANIMAL TEST ---" << std::endl;
+std::cout << std::endl;
 const WrongAnimal* wrongMeta = new WrongAnimal();
 const WrongAnimal* wrongWrongCat = new WrongCat();
 
@@ -35,5 +37,4 @@ delete wrongWrongCat;
 
 return 0;
 }
-
 

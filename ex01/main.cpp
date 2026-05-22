@@ -23,6 +23,8 @@ return 0;
 
  int main() {
 	std::cout << "\n===== POLYMORPHISM TEST =====\n";
+	std::cout << std::endl;
+
 	Animal* animals[4];
 	animals[0] = new Dog();
 	animals[1] = new Dog();
@@ -37,6 +39,8 @@ return 0;
 
     
 	std::cout << "\n===== Deep copy test (Dog) =====\n";
+	std::cout << std::endl;
+
 	Dog dog1;
 	dog1.getBrain()->setIdea(0, "Sleep");
 
@@ -47,6 +51,8 @@ return 0;
 			<< " | Dog2: " << dog2.getBrain()->getIdea(0) << std::endl;
 
 	std::cout << "\n==== Deep copy test (Cat) =====\n";
+	std::cout << std::endl;
+
 	Cat cat1;
 	cat1.getBrain()->setIdea(0, "chasing bird");
 
@@ -58,6 +64,7 @@ return 0;
 			<< " | Cat2: " << cat2.getBrain()->getIdea(0) << std::endl;
     
     std::cout << "\n===== Destruction =====\n";
-
+	std::cout << std::endl;
+	
 	return 0;
 }

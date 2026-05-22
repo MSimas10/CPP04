@@ -23,7 +23,7 @@ A_Animal& A_Animal::operator=(const A_Animal& other)
 
 A_Animal::~A_Animal()
 {
-    std::cout << "A_Animal constructor was destroyed" << std::endl;
+    std::cout << "A_Animal destructor called" << std::endl;
 }
 
 void A_Animal::makeSound(void) const

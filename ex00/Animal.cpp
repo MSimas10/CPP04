@@ -12,7 +12,7 @@ Animal::Animal(std::string name): _type(name)
 
 Animal::~Animal()
 {
-    std::cout << "Animal constructor was destroyed" << std::endl;
+    std::cout << "Animal destructor called" << std::endl;
 }
 
 Animal::Animal(const Animal& other)
